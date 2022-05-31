@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BANDAS, MUSICA, NUEVO, ARTISTAS, HISTORICOS,GÉNEROS,DÉCADAS, ROCK">
+    <meta name="description" content="Encuentra nuevos artistas y enriquece tus gustos musicales. Encontra Tu Banda te recomienda nuevas bandas todas las semanas">
+    <link rel="stylesheet" href="../encontra tu banda/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Encontra tu Banda</title>
+</head>
+<body>
+    
+    <section class="divLobby aparecer container-fluid col-xs-12" id="nav">
+        <div class="inlineFlex">
+        <h1 class="tituloLobby">Encontra Tu Banda!</h1>
+        <p class="subtituloLobby">La mejor herramienta para encontrar nuevos sonidos y enriquecer tu conocimiento musical</p>
+        </div><br><br>
+            <ul class="menuDeNavegacion">
+                <li><a href="../encontra tu banda/cuenta.html">Contacto</a></li>
+            </ul>
+    </section>
+    <section class="divLobby aparecer container-fluid col-xs-12" id="reco">
+    <h2 class="fondoCeleste">Recomendaciones De Esta Semana:</h2>
+        <p class="fondoCeleste lead">Todas las semanas Encontra Tu Banda te recomienda algo para escuchar!</p>
+    </section>
+    <section class="DivTabla divLobby aparecer container-fluid col-xs-12" id="tab">
+        <table border="1" cellspacing="0" cellpadding="10" id="Rtabla">
+            <tr>
+                <td><strong>GÉNERO</strong></td>
+                <td><strong>BANDA</strong></td>
+                <td><strong>DISCO</strong></td>
+                <td><strong>AÑO DE LANZAMIENTO</strong></td>
+                <td><strong>CANCIONES</strong></td>
+            </tr>
+            <tr>
+                <th>ROCK</th>
+                <th><a href="https://es.wikipedia.org/wiki/Led_Zeppelin">Led Zeppelin</a></th>
+                <th>Led Zeppelin (Remaster)</th>
+                <th>1969</th>
+                <th>
+                    <ol class="cancionesLista">
+                        <li>Babe I'm Gonna Leave You</li>
+                        <li>Dazed and Confused</li>
+                        <li>I Can't Quit You Baby</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>BLUES</th>
+                <th><a href="https://es.wikipedia.org/wiki/Jimi_Hendrix">Jimi Hendrix</a></th>
+                <th>Blues</th>
+                <th>1994</th>
+                <th>
+                    <ol class="cancionesLista">
+                        <li>Red House</li>
+                        <li>Born Under a Bad Sign</li>
+                        <li>Once I Had a Woman</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>METAL</th>
+                <th><a href="https://es.wikipedia.org/wiki/Black_Sabbath">Black Sabbath</a></th>
+                <th>Paranoid</th>
+                <th>1970</th>
+                <th>
+                    <ol class="cancionesLista">
+                        <li>War Pigs</li>
+                        <li>Iron Man</li>
+                        <li>Paranoid</li>
+                    </ol>
+                </th>
+            </tr>
+        </table>
+    </section>
+    <section class="divLobby aparecer container-fluid col-xs-12" id="vid">
+        <h3>Recomendación de Vivo:</h3>
+        <p>Red Hot Chili Peppers - vivo London 2007.</p>
+        <br>
+        <div id="divVivo"> 
+            <div class="row"><iframe width="460" height="315" src="https://www.youtube.com/embed/mc58QjI6vDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video "Red Hot Chili Peppers - Live Earth, London 2007"</iframe></div>
+            <div class="row"><img class="img-rounded" width="460" height="315" src="Img/RHCPlogo.png" alt="Foto Logo Red Hot Chili Peppers"></div>
+            <div class="row"><img class="img-rounded" width="460" height="315" src="Img/RHCPbanda.png" alt="Foto Integrantes de la banda"></div>
+        </div>
+    </section>
+    <section class="footer divLobby aparecer container-fluid col-xs-12" id="foot">
+        <p>Encontra Tu Banda</p>
+    </section>
+</section>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script>
+    window.setInterval (BlinkIt, 500);
+    var color = "red";
+    function BlinkIt () {
+    var blink = document.getElementById ("blink");
+    color = (color == "#ffffff")? "red" : "#ffffff";
+    blink.style.color = color;
+    blink.style.fontSize='100px';}
+    </script>
+    <div id="blink">Aguante el Rock!</div>
+    <div id="blink" onclick="parent.location='http://norfipc.com'">
+    </div>
+</body>
+</html>

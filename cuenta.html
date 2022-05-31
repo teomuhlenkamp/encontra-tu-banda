@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CUENTA, CREAR, ENCONTRA, TU, BANDA, MUSICA">
+    <meta name="description" content="Crea tu cuenta en Encontra Tu Banda para tener un perfil personalizado y recomendarte bandas acorde a tus gustos musicales">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="../encontra tu banda/estilos.css">
+   
+</head>
+<body>
+    <div class="divLobby container-fluid">
+    <h1>Encontra Tu Banda - Crea Tu Cuenta!</h1>
+    <h2><a href="../encontra tu banda/index.html">Home</a></h2>
+    <ul class="menuDeNavegacion">
+
+        <li><a href="Cuenta.html">Contacto</a></li>
+    </ul>
+    </div> 
+    <div id="DivCuenta">
+    <h2>¡Crea tu Cuenta!</h2><br>
+        <h3>Completa las casillas:</h3><br>
+        <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+        <br><label>Nombre y Apellido</label>
+            <input type="name" required placeholder="Escribe Aquí">
+        <br><label>Correo Electrónico</label>
+            <input type="email" required placeholder="ejemplo@gmail.com">
+        <br><label>Contraseña</label>
+            <input type="password" required placeholder="Escribe Aquí">
+        <br><label>Teléfono</label>
+            <input type="text" required placeholder="Escribe Aquí">
+        <br><strong>Género</strong>
+            <div>Masculino. </div>
+                <input type="radio" name="Género" value="Masculino">
+            <div>Femenino.</div>
+                <input type="radio" name="Género" value="Femenino">
+            <div>Prefiero No Decirlo.</div>
+                <input type="radio" name="Género" value="Prefiero No Decirlo">
+        <br><label>Edad</label>
+            <input type="number" required>
+        <br><label>Primer Idioma</label>
+            <select name="Idiomas">
+                <option value="Español">Español</option>
+                <option value="English">English</option>
+                <option value="Deutsche">Deutsche</option>
+                <option value="português">Português</option>
+            </select>
+        <br><strong>Cuentanos Sobre Tí (Opcional)</strong>
+            <p>Ejemplo: Bandas favoritas, Géneros favoritos, De donde eres, etc.</p>
+            <textarea name="Escribe Aquí" id="" cols="30" rows="10" placeholder="Escribe Aquí"></textarea>
+        <div>Acepta términos y condiciones.</div>
+            <input type="checkbox" name="Acepto" value="1">
+        <div>Acepto recibir correos con noticias del sitio.</div>
+            <input type="checkbox" name="Acepto" value="1">  
+        <br>
+            <input type="submit" value="Crear Cuenta" onclick="alert('Bienvenido')">
+            <input type="reset" value="Borrar todo">
+        </form>
+    </div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
+
